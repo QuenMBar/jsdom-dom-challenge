@@ -26,6 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
             minusButton.disabled = true;
             plusButton.disabled = true;
             heartButton.disabled = true;
+            commentForm.submitButton.disabled = true;
             paused = !paused;
         } else {
             startTimer();
@@ -33,6 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
             minusButton.disabled = false;
             plusButton.disabled = false;
             heartButton.disabled = false;
+            commentForm.submitButton.disabled = false;
             paused = !paused;
         }
     });
