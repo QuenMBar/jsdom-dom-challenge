@@ -45,16 +45,13 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     heartButton.addEventListener("click", (e) => {
-        // If it has the key
         if (heartArray.has(counter.innerHTML)) {
             let valueToInc = heartArray.get(counter.innerHTML);
             valueToInc++;
             heartArray.set(counter.innerHTML, valueToInc);
         } else {
-            // If it doesnt
             heartArray.set(counter.innerHTML, 1);
         }
-        // console.log(heartArray);
         heartList.innerHTML = "";
         heartArray.forEach((value, key) => {
             let newItem = document.createElement("li");
